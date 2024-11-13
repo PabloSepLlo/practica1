@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    height: 20vh;
+    background: linear-gradient(to bottom, black, green);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#img2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    transform: scaleX(-1);
+}
+img {
+    width: 16vh;
+    margin-right: 60px;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+a {
+    text-decoration: none;
+    margin-right: 60px;
+    color: greenyellow;    
+    padding: 15px 10px 15px 10px;
+    font-size: 2em;
+
+}
+a:hover{
+    background-color: greenyellow;
+    color: black;
+}
