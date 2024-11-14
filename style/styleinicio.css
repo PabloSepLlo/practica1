@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -25,6 +27,7 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    font-family: "Bungee", sans-serif;
 }
 a {
     text-decoration: none;
@@ -35,6 +38,6 @@ a {
 
 }
 a:hover{
-    background-color: greenyellow;
+    background: linear-gradient(to bottom, greenyellow, green);
     color: black;
 }
