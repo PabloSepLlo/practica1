@@ -45,9 +45,36 @@ main {
     flex-direction: row-reverse;
 }
 #form {
+    background: linear-gradient(to bottom, green, black);
     width: 18vw;
-    height: 50vh;
-    border: solid black 3px;
+    height: 86vh;
     padding: 20px;
-    font-size: 2em;
+    font-size: 1.5em;
+    color: greenyellow;
+    text-align: center;
+}
+
+.line-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: greenyellow;
+    margin: 20px 0;
+    position: relative;
+}
+  
+.line-text::before,
+.line-text::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: #ccc;
+    margin: 0 10px;
+}
+
+button {
+    height: 4em;
+    width: 10em;
 }
