@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 header {
-    height: 20vh;
+    height: 14vh;
     background: linear-gradient(to bottom, black, green);
     display: flex;
     justify-content: space-evenly;
@@ -14,14 +14,14 @@ header {
 }
 
 #img2 {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
     transform: scaleX(-1);
+    width: 10vh;
+    margin-right: 0vw;
+    object-fit: cover;
 }
 img {
-    width: 16vh;
-    margin-right: 60px;
+    width: 10vh;
+    margin-right: 5vw;
 }
 nav {
     display: flex;
@@ -31,13 +31,23 @@ nav {
 }
 a {
     text-decoration: none;
-    margin-right: 60px;
+    margin-right: 5vw;
     color: greenyellow;    
-    padding: 15px 10px 15px 10px;
-    font-size: 2em;
-
+    padding: 1.5vh 1vw;
+    font-size: 2vw;
 }
-a:hover{
+a:hover {
     background: linear-gradient(to bottom, greenyellow, green);
     color: black;
+}
+main {
+    display: flex;
+    flex-direction: row-reverse;
+}
+#form {
+    width: 18vw;
+    height: 50vh;
+    border: solid black 3px;
+    padding: 20px;
+    font-size: 2em;
 }
