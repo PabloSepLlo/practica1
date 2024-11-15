@@ -52,18 +52,53 @@ nav > a:hover {
 
 main {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
+    height: 72vh;
+    width: 100vw;
 }
 
+#inicio {
+    width: 82vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#inicio h1 {
+    font-family: "Bungee", sans-serif;
+    font-size: 3em;
+    color: green;
+}
+#inicio h2 {
+    font-family: "Bungee", sans-serif;
+    font-size: 2em;
+    color: green;
+}
+.videx {
+    display: flex;
+    flex-direction: row;
+    width: 82vw;
+    margin-top: 2vh;
+}
+.videx p {
+    text-align: center;
+    margin-top: 3vh;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: black;
+}
+.videx video {
+    width: 40vw;
+    margin: 1vw;
+}
 #form {
-    background: linear-gradient(to bottom, green, black);
+    background: linear-gradient(to bottom, green, black, green);
     width: 18vw;
-    height: 86vh;
+    height: 72vh;
     padding: 2vh;
     font-size: 1.3vw;
     color: greenyellow;
     text-align: center;
-    position: fixed;
+
 }
 
 #form h1 {
@@ -179,4 +214,23 @@ button:active {
 
 .explicacion p {
     font-size: 1vw;
+}
+
+footer {
+    height: 14vh;
+    background: linear-gradient(to bottom, green, black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+footer p {
+    color: yellowgreen;
+    font-size: 1em;
+    margin-right: 20px;
+}
+footer .iconos{
+    height: 4vh;
+    width: 2.5vw;
+    margin-left: 25px;
 }
