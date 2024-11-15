@@ -23,22 +23,40 @@
     </header>
     <main>
         <section id="form">
-            <p>Iniciar Sesión</p>
-            <br>
+            <h1>Iniciar Sesión</h1>
             <form action="">
-                <label id="lblMail" for="mail">Mail</label>
+                <label id="lblMail" for="mail">E-mail</label>
                 <br>
-                <input name="mail" id="mail"/>
+                <input type="text" name="mail" id="mail"/>
                 <br>
-                <label id="lblMail" for="mail">Contraseña</label>
+                <label id="lblContrasenia" for="contrasenia">Contraseña</label>
                 <br>
-                <input name="mail" id="mail"/>
+                <input type="email" name="contrasenia" id="contrasenia"/>
+                <br>
+                <a href="" id="olvidado">He olvidado mi contraseña</a>
                 <br>
                 <br>
                 <button name="iniciarSesion">Iniciar Sesión</button>
             </form>
             <p class="line-text">¿Eres nuevo cliente?</p>
             <button name="crearCuente">Crear una Cuenta</button>
+            <br>
+            <br>
+            <article class="explicacion">
+                <img id="iconCamion" src="multimedia/iconCamion.png" alt="Camion">
+                <div>
+                    <h2>Gestiona tus pedidos</h2>
+                    <p>Ten el control de todos tus pedidos y recibe notificaciones con el seguimiento</p>
+                </div>
+            </article>
+            <br>
+            <article class="explicacion">
+                <img id="iconLista" src="multimedia/iconLista.png" alt="Camion">
+                <div>
+                    <h2>Lista de deseos</h2>
+                    <p>Guarda tus productos favoritos en las listas de deseos personalizadas</p>
+                </div>
+            </article>
         </section>
     </main>
     <footer>

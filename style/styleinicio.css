@@ -5,6 +5,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    font-family: "Pt Sans Narrow";
+}
+
 header {
     height: 14vh;
     background: linear-gradient(to bottom, black, green);
@@ -16,65 +21,162 @@ header {
 #img2 {
     transform: scaleX(-1);
     width: 10vh;
-    margin-right: 0vw;
+    margin-right: 0;
     object-fit: cover;
 }
+
 img {
     width: 10vh;
     margin-right: 5vw;
 }
+
 nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
     font-family: "Bungee", sans-serif;
 }
-a {
+
+nav > a {
     text-decoration: none;
     margin-right: 5vw;
     color: greenyellow;    
     padding: 1.5vh 1vw;
     font-size: 2vw;
 }
-a:hover {
+
+nav > a:hover {
     background: linear-gradient(to bottom, greenyellow, green);
     color: black;
 }
+
 main {
     display: flex;
     flex-direction: row-reverse;
 }
+
 #form {
     background: linear-gradient(to bottom, green, black);
     width: 18vw;
     height: 86vh;
-    padding: 20px;
-    font-size: 1.5em;
+    padding: 2vh;
+    font-size: 1.3vw;
     color: greenyellow;
     text-align: center;
+    position: fixed;
+}
+
+#form h1 {
+    font-size: 1.5vw;
+    margin-bottom: 1vh;
+    color: white;
+}
+
+input {
+    border-radius: 4px;
+}
+
+input:focus {
+    outline: none;
+    border: 4px solid greenyellow;
+}
+
+#mail {
+    margin-bottom: 2vh;
 }
 
 .line-text {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 16px;
+    font-size: 1vw;
     font-weight: bold;
     color: greenyellow;
-    margin: 20px 0;
+    margin: 2vh 0;
     position: relative;
 }
-  
+ 
 .line-text::before,
 .line-text::after {
     content: "";
     flex: 1;
     height: 1px;
-    background-color: #ccc;
-    margin: 0 10px;
+    background-color: white;
+    margin: 0 1vw;
 }
 
 button {
-    height: 4em;
-    width: 10em;
+    height: 8vh;
+    width: 9vw;
+    background: greenyellow;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+button:hover {
+    background: white;
+    color: black;
+}
+
+button:active {
+    background: black;
+    color: greenyellow;
+}
+
+#olvidado {
+    font-size: 0.8vw;
+    color: white;
+}
+
+#olvidado:hover {
+    color: greenyellow;
+}
+
+.explicacion {
+    display: flex;
+    align-items: center;
+    height: 12vh;
+}
+
+#iconCamion {
+    width: 4vh;
+    height: 4vh;
+    animation: derIzq 1s infinite;
+}
+
+@keyframes derIzq {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(-10px);
+    }
+}
+
+#iconLista {
+    width: 4vh;
+    height: 4vh;
+    animation: apDes 2s infinite;
+}
+
+@keyframes apDes {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+.explicacion div {
+    margin-left: -4vw;
+}
+
+.explicacion h2 {
+    font-size: 1.5vw;
+    color: white;
+}
+
+.explicacion p {
+    font-size: 1vw;
 }
