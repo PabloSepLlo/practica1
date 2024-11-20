@@ -7,6 +7,7 @@
 }
 
 body {
+    background: linear-gradient(to bottom, greenyellow, white, greenyellow);
     font-family: "Pt Sans Narrow";
     display: flex;
     flex-direction: column;
@@ -16,10 +17,12 @@ body {
 }
 
 header {
+    background-image: url('../multimedia/Fondo.jpg');
+    background-size: cover;
+    background-attachment: fixed;
     width: 100%;
     position: fixed;
     height: 14vh;
-    background: linear-gradient(to bottom, black, green);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -34,6 +37,11 @@ header {
 }
 
 img {
+    width: 10vh;
+    margin-right: 5vw;
+}
+
+img [alt="logo"] {
     width: 10vh;
     margin-right: 5vw;
 }
@@ -56,6 +64,10 @@ nav > a {
 nav > a:hover {
     background: linear-gradient(to bottom, greenyellow, green);
     color: black;
+}
+
+#MenuInicio {
+    color: white;
 }
 
 main {
@@ -137,7 +149,7 @@ main {
     right: 0;
     width: 17vw;
     height: calc(100vh - 14vh);
-    background: linear-gradient(to bottom, green, black, green);
+    background: linear-gradient(to bottom, black, green, black);
     margin: 0vw;
     padding: 2vh;
     font-size: 1.3vw;
@@ -158,7 +170,7 @@ input {
     border-radius: 4px;
     height: 3vh;
     width: 15vw;
-    font-size: 1em;
+    font-size: 16px;
 }
 
 input:focus {
@@ -196,6 +208,7 @@ button {
     background: greenyellow;
     border-radius: 7px;
     font-weight: bold;
+    font-size: 1rem;
 }
 
 button:hover {
@@ -210,11 +223,16 @@ button:active {
 
 #olvidado {
     font-size: 0.8vw;
-    color: white;
+    color: greenyellow;
 }
 
 #olvidado:hover {
-    color: greenyellow;
+    color: green;
+}
+
+#olvidado:visited {
+    color: white;
+    text-decoration: none;
 }
 
 .explicacion {
@@ -228,6 +246,8 @@ button:active {
     height: 4vh;
     animation: derIzq 1s infinite;
 }
+
+
 
 @keyframes derIzq {
     0%, 100% {
@@ -267,8 +287,10 @@ button:active {
 }
 
 footer {
+    background-image: url('../multimedia/Fondo.jpg');
+    background-size: cover;
+    background-attachment: fixed;
     height: 6vh;
-    background: linear-gradient(to bottom, green, black); 
     display: grid;
     grid-template-columns: 1fr auto 1fr;
     align-items: center; 
@@ -278,7 +300,7 @@ footer {
 footer p {
     grid-column: 1;
     text-align: left;
-    color: yellowgreen;
+    color: greenyellow;
     font-size: 1em;
     margin: 0;
 }

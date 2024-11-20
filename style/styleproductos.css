@@ -7,6 +7,7 @@
 }
 
 body {
+    background: linear-gradient(to bottom, greenyellow, white, greenyellow);
     font-family: "Pt Sans Narrow";
     display: flex;
     flex-direction: column;
@@ -16,10 +17,12 @@ body {
 }
 
 header {
+    background-image: url('../multimedia/Fondo.jpg');
+    background-size: cover;
+    background-attachment: fixed;
     width: 100%;
     position: fixed;
     height: 14vh;
-    background: linear-gradient(to bottom, black, green);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -34,6 +37,11 @@ header {
 }
 
 img {
+    width: 10vh;
+    margin-right: 5vw;
+}
+
+img [alt="logo"] {
     width: 10vh;
     margin-right: 5vw;
 }
@@ -58,9 +66,231 @@ nav > a:hover {
     color: black;
 }
 
+#MenuInicio {
+    color: white;
+}
+
+main {
+    margin-top: 14vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 0;
+}
+
+#inicio {
+    width: 82vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#titulo span {
+    font-family: "Bungee", sans-serif;
+    font-size: 5em;
+    color: green;
+}
+
+#titulo {
+    width: 82vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 1vh;
+}
+
+#inicio h2 {
+    font-family: "Bungee", sans-serif;
+    font-size: 2em;
+    color: green;
+}
+
+.videx {
+    display: flex;
+    flex-direction: row;
+    width: 82vw;
+    margin-top: 2vh;
+    gap: 1vw;
+}
+
+.videx .parrafo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1vw;
+    width: 41vw;
+    text-align: center;
+    font-size: 1.3vw;
+    font-weight: bold;
+    color: black;
+}
+
+.videx .parrafo h3 {
+    font-size: 2vw;
+    color: green;
+    font-weight: bold;
+}
+
+.videx video {
+    width: 41vw;
+    height: 45vh;
+    margin: 1vw;
+}
+
+.videx img {
+    width: 41vw;
+    height: 45vh;
+    margin: 1vw;
+}
+
+#form {
+    position: sticky;
+    top: 14vh;
+    right: 0;
+    width: 17vw;
+    height: calc(100vh - 14vh);
+    background: linear-gradient(to bottom, black, green, black);
+    margin: 0vw;
+    padding: 2vh;
+    font-size: 1.3vw;
+    color: greenyellow;
+    text-align: center;
+    overflow-y: auto;
+    z-index: 1;
+    overflow-x: hidden;
+}
+
+#form h1 {
+    font-size: 1.5vw;
+    margin-bottom: 1vh;
+    color: white;
+}
+
+input {
+    border-radius: 4px;
+    height: 3vh;
+    width: 15vw;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: none;
+    border: 4px solid greenyellow;
+}
+
+#mail {
+    margin-bottom: 2vh;
+}
+
+.line-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1vw;
+    font-weight: bold;
+    color: greenyellow;
+    margin: 2vh 0;
+    position: relative;
+}
+ 
+.line-text::before,
+.line-text::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: white;
+    margin: 0 1vw;
+}
+
+button {
+    height: 8vh;
+    width: 9vw;
+    background: greenyellow;
+    border-radius: 7px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+button:hover {
+    background: white;
+    color: black;
+}
+
+button:active {
+    background: black;
+    color: greenyellow;
+}
+
+#olvidado {
+    font-size: 0.8vw;
+    color: greenyellow;
+}
+
+#olvidado:hover {
+    color: green;
+}
+
+#olvidado:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.explicacion {
+    display: flex;
+    align-items: center;
+    height: 12vh;
+}
+
+#iconCamion {
+    width: 4vh;
+    height: 4vh;
+    animation: derIzq 1s infinite;
+}
+
+
+
+@keyframes derIzq {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(-10px);
+    }
+}
+
+#iconLista {
+    width: 4vh;
+    height: 4vh;
+    animation: apDes 2s infinite;
+}
+
+@keyframes apDes {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+.explicacion div {
+    margin-left: -4vw;
+}
+
+.explicacion h2 {
+    font-size: 1.5vw;
+    color: white;
+}
+
+.explicacion p {
+    font-size: 1vw;
+}
+
 footer {
+    background-image: url('../multimedia/Fondo.jpg');
+    background-size: cover;
+    background-attachment: fixed;
     height: 6vh;
-    background: linear-gradient(to bottom, green, black); 
     display: grid;
     grid-template-columns: 1fr auto 1fr;
     align-items: center; 
@@ -70,7 +300,7 @@ footer {
 footer p {
     grid-column: 1;
     text-align: left;
-    color: yellowgreen;
+    color: greenyellow;
     font-size: 1em;
     margin: 0;
 }
