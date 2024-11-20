@@ -247,8 +247,6 @@ button:active {
     animation: derIzq 1s infinite;
 }
 
-
-
 @keyframes derIzq {
     0%, 100% {
       transform: translateX(0);
