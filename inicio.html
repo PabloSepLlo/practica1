@@ -12,8 +12,8 @@
             <img src="multimedia/png-transparent-razer-inc-laptop-laptop-electronics-text-logo-removebg-preview.png" alt="">
         </div>
         <nav>
-            <a href="">INICIO</a>
-            <a href="">SOBRE NOSOTROS</a>
+            <a href="inicio.html">INICIO</a>
+            <a href="productos.html">SOBRE NOSOTROS</a>
             <a href="">PRODUCTOS</a>
             <a href="">CONTACTO</a>
         </nav>
@@ -24,15 +24,38 @@
     <main>
         <section id="inicio">
             <h1>RazerPC</h1>
+            <br>
             <h2>PC Gaming</h2>
             <article class="videx">
-                <video src="multimedia/Mejor.mp4" autoplay loop></video>
-                <p>Descubre los mejores ordenadores gaming en nuestro video: analiza rendimiento, gráficos de última generación y configuraciones ideales para jugar a máxima potencia. Perfecto para gamers que buscan calidad y rendimiento sin compromisos. ¡No te lo pierdas!</p>
+                <video src="multimedia/videoInicio.mp4" autoplay muted loop></video>
+                <div class="parrafo">
+                    <h3>Las torres más potentes del mercado</h3>
+                    <br>
+                    <p>En nuestra tienda encontrarás las torres más avanzadas, 
+                        diseñadas para ofrecer un rendimiento inigualable. Equipadas con procesadores 
+                        de última generación, sistemas de refrigeración de alta eficiencia y tarjetas 
+                        gráficas de élite, nuestras torres están preparadas para superar cualquier desafío. 
+                        Ya sea para gaming extremo, edición de video en 4K o aplicaciones de realidad virtual, 
+                        te garantizamos potencia, velocidad y estabilidad. Personaliza tu experiencia con configuraciones 
+                        únicas y un diseño que combina estética y funcionalidad. ¡Hazte con una torre que no solo cumple, 
+                        sino que supera todas las expectativas!</p>
+                </div>
             </article>
+            <br>
             <h2>Portatiles GAMING</h2>
-            <article id="fotex">
-                <p></p>
-                <img src="" alt="">
+            <article class="videx">
+                <div class="parrafo">
+                    <h3>Portátiles Gaming: Potencia y movilidad sin límites</h3>
+                    <br>
+                    <p>Nuestros portátiles gaming están diseñados para llevar el rendimiento al extremo en 
+                        cualquier lugar. Equipados con procesadores de alta velocidad, tarjetas gráficas de última 
+                        generación y pantallas de alta definición, son ideales para jugadores que buscan lo mejor 
+                        en potencia y portabilidad. Disfruta de una experiencia fluida y envolvente, ya sea en casa, 
+                        en una LAN party o en movimiento. Además, su diseño compacto y duradero asegura que puedas llevar 
+                        tu pasión por el gaming a donde quieras. ¡Descubre la combinación perfecta entre estilo, 
+                        rendimiento y libertad!</p>
+                </div>
+                <img src="multimedia/Portatil.jpg" alt="portatil">
             </article>
         </section>
         <section id="form">
@@ -40,11 +63,11 @@
             <form action="">
                 <label id="lblMail" for="mail">E-mail</label>
                 <br>
-                <input type="text" name="mail" id="mail"/>
+                <input type="email" name="mail" id="mail"/>
                 <br>
                 <label id="lblContrasenia" for="contrasenia">Contraseña</label>
                 <br>
-                <input type="email" name="contrasenia" id="contrasenia"/>
+                <input type="password" name="contrasenia" id="contrasenia"/>
                 <br>
                 <a href="" id="olvidado">He olvidado mi contraseña</a>
                 <br>
@@ -76,8 +99,11 @@
         <p>
             © 2024 RazerPC. Todos los derechos reservados.
         </p>
-        <img src="multimedia/facebook.png" alt="" class="iconos">
-        <img src="multimedia/logotipo-de-instagram.png" alt="" class="iconos">
-        <img src="multimedia/medios-de-comunicacion-social.png" alt="" class="iconos">
+        <div class="icon-container">
+            <img src="multimedia/facebook.png" alt="" class="iconos">
+            <img src="multimedia/logotipo-de-instagram.png" alt="" class="iconos">
+            <img src="multimedia/medios-de-comunicacion-social.png" alt="" class="iconos">
+        </div>
+    </footer>
 </body>
 </html>

@@ -1,3 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
 * {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Pt Sans Narrow";
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    height: 14vh;
+    background: linear-gradient(to bottom, black, green);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 10;
+}
+
+#img2 {
+    transform: scaleX(-1);
+    width: 10vh;
+    margin-right: 0;
+    object-fit: cover;
+}
+
+img {
+    width: 10vh;
+    margin-right: 5vw;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Bungee", sans-serif;
+}
+
+nav > a {
+    text-decoration: none;
+    margin-right: 5vw;
+    color: greenyellow;    
+    padding: 1.5vh 1vw;
+    font-size: 2vw;
+}
+
+nav > a:hover {
+    background: linear-gradient(to bottom, greenyellow, green);
+    color: black;
+}
+
+footer {
+    height: 6vh;
+    background: linear-gradient(to bottom, green, black); 
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center; 
+    padding: 0 15px;
+}
+
+footer p {
+    grid-column: 1;
+    text-align: left;
+    color: yellowgreen;
+    font-size: 1em;
+    margin: 0;
+}
+
+footer .icon-container {
+    grid-column: 2; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    gap: 15px; 
+}
+
+footer .iconos {
+    height: 3vh;
+    width: 3vh; 
 }
