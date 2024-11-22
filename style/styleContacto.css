@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to bottom, greenyellow, white, greenyellow);
+    font-family: "Pt Sans Narrow";
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+header {
+    background-image: url('../multimedia/Fondo.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    position: fixed;
+    height: 14vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 10;
+}
+
+#img2 {
+    transform: scaleX(-1);
+    width: 10vh;
+    margin-right: 0;
+    object-fit: cover;
+}
+
+img {
+    width: 10vh;
+    margin-right: 5vw;
+}
+
+img [alt="logo"] {
+    width: 10vh;
+    margin-right: 5vw;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Bungee", sans-serif;
+}
+
+nav > a {
+    text-decoration: none;
+    margin-right: 5vw;
+    color: greenyellow;    
+    padding: 1.5vh 1vw;
+    font-size: 2vw;
+}
+
+nav > a:hover {
+    background: linear-gradient(to bottom, greenyellow, green);
+    color: black;
+}
+
+#MenuInicio {
+    color: white;
+}
+
+main {
+    margin-top: 14vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 0;
+}
+
+#inicio {
+    width: 82vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#titulo span {
+    font-family: "Bungee", sans-serif;
+    font-size: 5em;
+    color: green;
+}
+
+#titulo {
+    width: 82vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 1vh;
+}
+/*aqui van mis estilos*/
+
+
+#seccion2 h1{
+    font-size: 2em;
+    font-family: bungee;
+    color: green;
+    
+    text-align: center;
+}
+
+#seccion2 p{
+    text-align: center;;
+    color: green;
+    font-size: 1em;
+    font-family: "Pt Sans Narrow";
+    margin-bottom: 1em;
+    
+}
+
+
+#contactanos{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+iframe{
+    height: 86vh;
+    width: 33vw;
+    margin: 2em;
+    box-shadow: 10px 10px 10px green;
+    border-radius: 5%;
+}
+
+#formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:10%;
+    border-radius: 5%;
+    color: yellowgreen;
+    background-image: url(../multimedia/fondoform3.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    box-shadow: 10px 10px 10px green;
+    height: 86vh;
+    width: 33vw;
+    text-align: left;
+    margin: 2em;
+    
+    
+    
+}
+#formulario h1{
+    color: white;
+    margin-bottom: 30px;
+    font-size: 2em;
+    margin-top: 15px;
+
+}
+#formulario label{
+    color: yellowgreen;
+    height: 18%;
+    font-weight: bold;
+}
+#formulario input{
+    color: black;
+    display: block;
+    border-radius: 5%;
+    width: 20rem;
+    height: 2rem;
+    margin-left: 10;
+    
+    
+}
+
+#enviar{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family:"Pt Sans Narrow";
+    background-color: yellowgreen;
+}
+
+
+input:hover{
+    background-color: yellowgreen;
+    
+
+}
+
+input:active{
+    background-color: yellowgreen;
+}
+#form {
+    position: sticky;
+    top: 14vh;
+    right: 0;
+    width: 17vw;
+    height: calc(100vh - 14vh);
+    background: linear-gradient(to bottom, black, green, black);
+    margin: 0vw;
+    padding: 2vh;
+    font-size: 1.3vw;
+    color: greenyellow;
+    text-align: center;
+    overflow-y: auto;
+    z-index: 1;
+    overflow-x: hidden;
+}
+
+#form h1 {
+    font-size: 1.5vw;
+    margin-bottom: 1vh;
+    color: white;
+}
+
+input {
+    border-radius: 4px;
+    height: 3vh;
+    width: 15vw;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: none;
+    border: 4px solid greenyellow;
+}
+
+#mail {
+    margin-bottom: 2vh;
+}
+
+.line-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1vw;
+    font-weight: bold;
+    color: greenyellow;
+    margin: 2vh 0;
+    position: relative;
+}
+ 
+.line-text::before,
+.line-text::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: white;
+    margin: 0 1vw;
+}
+
+button {
+    height: 8vh;
+    width: 9vw;
+    background: greenyellow;
+    border-radius: 7px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+button:hover {
+    background: white;
+    color: black;
+}
+
+button:active {
+    background: black;
+    color: greenyellow;
+}
+
+#olvidado {
+    font-size: 0.8vw;
+    color: greenyellow;
+}
+
+#olvidado:hover {
+    color: green;
+}
+
+#olvidado:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.explicacion {
+    display: flex;
+    align-items: center;
+    height: 12vh;
+}
+
+#iconCamion {
+    width: 4vh;
+    height: 4vh;
+    animation: derIzq 1s infinite;
+}
+
+
+
+@keyframes derIzq {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(-10px);
+    }
+}
+
+#iconLista {
+    width: 4vh;
+    height: 4vh;
+    animation: apDes 2s infinite;
+}
+
+@keyframes apDes {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+.explicacion div {
+    margin-left: -4vw;
+}
+
+.explicacion h2 {
+    font-size: 1.5vw;
+    color: white;
+}
+
+.explicacion p {
+    font-size: 1vw;
+}
+
+footer {
+    background-image: url('../multimedia/Fondo.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    height: 6vh;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center; 
+    padding: 0 15px;
+}
+
+footer p {
+    grid-column: 1;
+    text-align: left;
+    color: greenyellow;
+    font-size: 1em;
+    margin: 0;
+}
+
+footer .icon-container {
+    grid-column: 2; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    gap: 15px; 
+}
+
+footer .iconos {
+    height: 3vh;
+    width: 3vh; 
+}

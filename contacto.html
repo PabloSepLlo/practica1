@@ -3,9 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>inicio</title>
+    <link rel="stylesheet" href="style/styleContacto.css">
 </head>
 <body>
+    <header>
+        <div id="img1">
+            <img src="multimedia/png-transparent-razer-inc-laptop-laptop-electronics-text-logo-removebg-preview.png" alt="logo">
+        </div>
+        <nav>
+            <!-- Cambiar id del <a> segun la página-->
+            <a href="inicio.html" >INICIO</a>
+            <a href="sobreNosotros.html">SOBRE NOSOTROS</a>
+            <a href="productos.html">PRODUCTOS</a>
+            <a href="contacto.html" id="MenuInicio">CONTACTO</a>
+        </nav>
+        <div id="img2">
+            <img src="multimedia/png-transparent-razer-inc-laptop-laptop-electronics-text-logo-removebg-preview.png" alt="logo">
+        </div>
+    </header>
+    <main>
+        <section id="inicio">
+            <div id="titulo">
+                <span>R</span>
+                <span>A</span>
+                <span>Z</span>
+                <span>E</span>
+                <span>R</span>
+                <span>P</span>
+                <span>C</span>
+            </div>
+            <br>
+            
+            <section id="seccion2">
+                <h1>¿Quieres ponerte en contacto con nosotros?</h1>
+                <p>Puedes hacerlo a traves del siguiente formulario o visitando nuestra tienda fisica</p>
+                <div id="contactanos">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d96971.48741376068!2d-3.2669696!3d40.577830899999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1731679688042!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <form action="" method="post" id="formulario">
+                        <h1>Rellena el formulario</h1>
+                        <label for="">
     
-</body>
-</html>
+                            Nombre:
+                            <input type="text"><br><br>
+    
+                        </label>
+                        <label for="">
+    
+                            Apellidos:
+                            <input type="text"><br><br>
+    
+                        </label>
+                        <label for="">
+    
+                            DNI: 
+                            <input type="number"><br><br>
+    
+                        </label>
+                        <label for="">
+                            
+                            Correo: 
+                            <input type="email" name="email" id=""><br><br>
+    
+                        </label>    
+                        <label for="">
+                            Dinos que piensas:
+                            <input  id="textarea"type="textarea" ><br><br>
+    
+                        </label>    
+                        <label for="">
+                            
+                            <input  id="enviar"type="submit" value="enviar">
+    
+                        </label>
+    
+                    </form>
+                </div>
+            </section>
+        </section>    
+        <section id="form">
+            <h1>Iniciar Sesión</h1>
+            <form action="">
+                <label id="lblMail" for="mail">E-mail</label>
+                <br>
+                <input type="email" name="mail" id="mail"/>
+                <br>
+                <label id="lblContrasenia" for="contrasenia">Contraseña</label>
+                <br>
+                <input type="password" name="contrasenia" id="contrasenia"/>
+                <br>
+                <a href="" id="olvidado">He olvidado mi contraseña</a>
+                <br>
+                <br>
+                <button name="iniciarSesion">Iniciar Sesión</button>
+            </form>
+            <p class="line-text">¿Eres nuevo cliente?</p>
+            <button name="crearCuente">Crear una Cuenta</button>
+            <br>
+            <br>
+            <article class="explicacion">
+                <img id="iconCamion" src="multimedia/iconCamion.png" alt="Camion">
+                    <div>
+                        <h2>Gestiona tus pedidos</h2>
+                        <p>Ten el control de todos tus pedidos y recibe notificaciones con el seguimiento</p>
+                    </div>
+            </article>
+            <br>
+            <article class="explicacion">
+                <img id="iconLista" src="multimedia/iconLista.png" alt="Camion">
+                    <div>
+                        <h2>Lista de deseos</h2>
+                        <p>Guarda tus productos favoritos en las listas de deseos personalizadas</p>
+                    </div>
+            </article>
+        </section>    
+    </main>
+        <footer>
+            <p>
+                © 2024 RazerPC. Todos los derechos reservados.
+            </p>
+            <div class="icon-container">
+                <img src="multimedia/facebook.png" alt="" class="iconos">
+                <img src="multimedia/instagram.png" alt="" class="iconos">
+                <img src="multimedia/x.png" alt="" class="iconos">
+            </div>
+        </footer>
+    </body>
+    </html>
