@@ -144,14 +144,12 @@ iframe{
     background-image: url(../multimedia/fondoform3.jpg);
     background-repeat: no-repeat;
     background-attachment: scroll;
+    background-size: 200vw 200vh;
     box-shadow: 10px 10px 10px green;
     height: 86vh;
     width: 33vw;
     text-align: left;
     margin: 2em;
-    
-    
-    
 }
 #formulario h1{
     color: white;
