@@ -105,6 +105,230 @@ main {
     color: green;
 }
 
+#barraMenu {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+}
+
+#barraMenu > div {
+    flex: 1;
+}
+
+
+#tituloBoton {
+    width: 25vw;
+    font-size: 1vw;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 1vw;
+}
+
+#botonCategorias {
+    font-family: "Pt Sans Narrow";
+    font-size: 1vw;
+    width: 11vw;
+    height: 2vw;
+}
+
+.search-container {
+    border: 2px solid black;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 20vw;
+    height: 2vw;
+}
+
+.search-input {
+    width: 35vw;
+    height: 2vw;
+    padding: 10px 40px; 
+    border: 2px solid #ccc;
+    border-radius: 7px;
+    font-size: 16px;
+    outline: none;
+}
+
+.search-container::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 10px; 
+    transform: translateY(-50%);
+    background-image: url('../multimedia/lupa.png');
+    background-size: contain; 
+    background-repeat: no-repeat;
+    width: 1.4vw;
+    height: 1.4vw;
+    cursor: pointer;
+}
+
+#iconosBarra {
+    width: 100%;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end; 
+}
+
+.iconosBarra {
+    border: 2px solid black;
+    width: 2vw;
+    height: 2vw;
+    cursor: pointer;
+    margin-left: 0; 
+}
+
+.tipoProducto {
+    width: 100%;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    gap: 1vw; 
+}
+
+.tipoProducto::before,
+.tipoProducto::after {
+    content: "";
+    flex: 1; 
+    height: 3px; 
+    background-color: black;
+    margin: 0 1vw;
+}
+
+.productos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1vw;
+}
+
+article {
+    background: linear-gradient(to bottom, white, white, greenyellow);
+    box-shadow: 0 5px 10px black;
+    border-radius: 7px;
+    border: 8px solid white;
+    flex-direction: column;
+    display: flex;
+    flex: 6;
+    width: 15.3vw;
+    height: 58vh;
+    background-color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+    article {
+        flex: 1 0 30%;
+        max-width: 30%;
+        height: auto;
+    }
+}
+
+@media (max-width: 800px) {
+    article {
+        flex: 1 0 45%; 
+        max-width: 45%;
+        height: auto;
+    }
+}
+
+.imagenProducto {
+    width: 100%; 
+    max-width: 14.5vw; 
+    min-width: 150px;
+    height: auto; 
+    object-fit: contain; 
+    display: block; 
+    margin: 0 auto; 
+}
+
+article h3 {
+    height: 15vh;
+    font-size: 1.2rem;
+}
+
+.precios {
+    display: flex;
+    flex-direction: row;
+    height: 4vh;
+    gap: 1vw;
+}
+
+.descuento {
+    color: #bf0019;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.precio {
+    color:gray;
+    text-decoration: line-through;
+}
+
+.opiniones {
+    height: 4vh;
+}
+.opiniones > span {
+    font-weight: bold;
+}
+
+.logoEmoji {
+    width: 30px;
+    height: 30px;
+}
+
+.envio {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: green;
+    font-weight: bold;
+    gap: 1vw;
+}
+
+.envio li {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 0.5vw;
+}
+
+.envio li::before {
+    content: url('../multimedia/RazerInc.png'); 
+    display: inline-block;
+    margin-right: 0.5vw;
+    width: 20px;
+    height: auto;
+}
+
+button {
+    font-family: "Bungee", sans-serif;
+    height: 6vh;
+    width: 10vw;
+    min-width: 150px;
+    background: greenyellow;
+    border-radius: 7px;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    box-shadow: 0 5px 10px black;
+}
+
+button:hover {
+    background: white;
+    color: black;
+}
+
+button:active {
+    background: black;
+    color: greenyellow;
+}
+
 footer {
     background-image: url('../multimedia/Fondo.jpg');
     background-size: cover;
