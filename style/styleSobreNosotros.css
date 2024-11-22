@@ -189,7 +189,7 @@ main {
     font-style: italic; 
 }
 
-button[name="iniciarSesion"] {
+button[name="iniciarSes"] {
     margin: 20px auto; 
     padding: 10px 20px;
     font-size: 1.2vw;
@@ -201,7 +201,7 @@ button[name="iniciarSesion"] {
     transition: background-color 0.3s ease;
 }
 
-button[name="iniciarSesion"]:hover {
+button[name="iniciarSes"]:hover {
     background-color: white; 
 }
 
@@ -220,6 +220,7 @@ button[name="iniciarSesion"]:hover {
     overflow-y: auto;
     z-index: 1;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 #form h1 {
