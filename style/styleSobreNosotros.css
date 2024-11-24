@@ -181,6 +181,7 @@ main {
     border-radius: 5px;
     font-size: 1vw;
     height: 50px; 
+    max-height: 8vh;
 }
 
 #formtrabajar input::placeholder {
@@ -285,7 +286,7 @@ button:active {
     color: greenyellow;
 }
 
-#olvidado {
+#olvidado:link {
     font-size: 0.8vw;
     color: greenyellow;
 }

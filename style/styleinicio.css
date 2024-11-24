@@ -223,7 +223,7 @@ button:active {
     color: greenyellow;
 }
 
-#olvidado {
+#olvidado:link {
     font-size: 0.8vw;
     color: greenyellow;
 }
