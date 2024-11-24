@@ -70,6 +70,10 @@ nav > a:hover {
     color: white;
 }
 
+#MenuInicio:link {
+    color: white;
+}
+
 main {
     margin-top: 14vh;
     display: flex;
@@ -140,6 +144,7 @@ main {
     height: 2.2vw;
     min-width: 30px;
     min-height: 30px;
+    max-height: 2.2vw;
     background: greenyellow;
     border-radius: 7px;
     font-weight: bolder;
@@ -382,12 +387,25 @@ footer {
     padding: 0 15px;
 }
 
-footer p {
+footer a {
     grid-column: 1;
     text-align: left;
     color: greenyellow;
     font-size: 1em;
     margin: 0;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: white;
+}
+
+footer a:active {
+    color: #bf0019;
+}
+
+footer a:visited {
+    color: cyan;
 }
 
 footer .icon-container {
